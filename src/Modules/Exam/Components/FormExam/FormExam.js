@@ -19,7 +19,7 @@ function createData(name, unit, publiser, rest, note) {
     createData('Gingerbread', 356, 16.0, 49, 3.9),
   ];
   
-  export default function BasicTable() {
+  export default function FormExam() {
     return (
         <div>
           <Typography style={{marginBottom:50,marginTop:20}} variant="h3" component="h4" align="center">Kho vật tư</Typography>
@@ -28,9 +28,9 @@ function createData(name, unit, publiser, rest, note) {
           <TableHead>
             <TableRow>
               <TableCell >Tên</TableCell>
-              <TableCell align="center">Đơn vị</TableCell>
-              <TableCell align="center">Nhà sản xuất</TableCell>
               <TableCell align="center">Tồn kho</TableCell>
+              <TableCell align="center">Nhà sản xuất</TableCell>
+              <TableCell align="center">Đơn vị</TableCell>
               <TableCell align="center">Ghi chú</TableCell>
             </TableRow>
           </TableHead>
@@ -43,9 +43,9 @@ function createData(name, unit, publiser, rest, note) {
                 <TableCell component="th" scope="row" >
                   {row.name}
                 </TableCell>
-                <TableCell align="center">{row.unit}</TableCell>
-                <TableCell align="center">{row.publiser}</TableCell>
                 <TableCell align="center">{row.rest}</TableCell>
+                <TableCell align="center">{row.publiser}</TableCell>
+                <TableCell align="center">{row.unit}</TableCell>
                 <TableCell align="center">{row.note}</TableCell>
               </TableRow>
             ))}

@@ -23,11 +23,11 @@ export class Http {
         if (params && Object.keys(params).length) {
             options.params = params;
         }
-        return Axios.get(BASE_URL + endPoint, options);
+        return Axios.get(endPoint, options);
     }
 
     static post = (endPoint, payload) => {
-        return Axios.post(BASE_URL + endPoint, payload, {
+        return Axios.post(endPoint, payload, {
             header: this.header,
         });
     }

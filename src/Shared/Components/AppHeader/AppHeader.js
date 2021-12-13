@@ -42,6 +42,8 @@ class AppHeader extends React.Component {
                                 <DropdownToggle nav caret>Quản lý</DropdownToggle>
                                 <DropdownMenu>
                                     <DropdownItem onClick={()=>this.goTo('exam')}>Kho vật tư</DropdownItem>
+                                    <DropdownItem onClick={()=>this.goTo('machine')}>Quản lý máy lâm sàng</DropdownItem>
+                                    <DropdownItem onClick={()=>this.goTo('product')}>Quản lý vật tư tiêu hao</DropdownItem>
                                     <DropdownItem onClick={()=>this.goTo('customer')}>Customer</DropdownItem>
                                 </DropdownMenu>
                             </Dropdown>
